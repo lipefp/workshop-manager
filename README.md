@@ -1,53 +1,77 @@
-🚗 Workshop Management System
+# 🚗 Workshop Management System
 
-A complete desktop system for managing mechanical and auto electrical workshops, focused on efficient service, financial organization, and document issuance.
+A desktop application for managing mechanical and auto-electrical workshops — focused on fast service, financial organization, and document issuance. Built with Python and a clean PyQt5 interface.
 
-The system features a clean and intuitive interface.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Qt](https://img.shields.io/badge/PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
-🚀 Main Features
+---
 
-📋 Customer and Vehicle Registration: Detailed registration with automatic license plate validation (Mercosur and Old standards).
+## 📸 Preview
 
-📝 Service Order Generation: Quick creation of service orders with multiple items (parts and labor).
+| Main Menu | Service Orders | Financial Report |
+| --- | --- | --- |
+| ![Main menu](assets/menu_principal.png) | ![Service orders](assets/menu_gerar_notas.png) | ![Report](assets/menu_relatorio.png) |
 
-🖨️ Professional PDF Export: Generates quotes and receipts in PDF format with a corporate layout, ready for printing or sending via WhatsApp.
+---
 
-💰 Financial Control: Instant report of accumulated revenue and cash flow.
+## 🚀 Features
 
-📂 History (Record): Complete consultation of all services performed on a specific vehicle.
+- **📋 Customer & Vehicle Registration** — with automatic license-plate validation (Mercosur and old standards).
+- **📝 Service Order Generation** — quick creation of orders with multiple items (parts and labor).
+- **🖨️ Professional PDF Export** — quotes and receipts in PDF with a corporate layout, ready to print or send via WhatsApp.
+- **💰 Financial Control** — instant report of accumulated revenue and cash flow.
+- **📂 Service History** — full record of everything done on a given vehicle.
 
-🎨 Clean Interface: Modern, responsive, and easy-to-use design.
+---
 
-🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-Language: Python 3
+- **Language:** Python 3
+- **GUI:** PyQt5
+- **Database:** SQLite3 (native — no external server needed)
+- **PDF Engine:** ReportLab
 
-GUI (Graphical Interface): PyQt5
+---
 
-Database: SQLite3 (Native, no external server required)
+## 🗂️ Project Structure
 
-Reports: ReportLab (PDF generation engine)
-
-Version Control: Git & GitHub
-
-🗂️ Project Structure
-
+```
 app-notas-fiscais/
-
 ├── src/
+│   ├── main.py          # Main interface and logic
+│   └── models/
+│       └── db.py        # Database layer (SQLite)
+├── assets/              # Screenshots
+├── requirements.txt
+└── README.md
+```
 
-│ ├── main.py # Main Interface and Logic
+---
 
-│ └── models/
+## ▶️ Getting Started
 
-│ └── db.py # Database Layer (SQLite)
+```bash
+# clone
+git clone https://github.com/lipefp/app-notas-fiscais.git
+cd app-notas-fiscais
 
-├── assets/ # Images and demonstrations
+# virtual environment
+python -m venv .venv
+source .venv/bin/activate        # Linux/macOS
+# .venv\Scripts\activate         # Windows
 
-├── .gitignore # Files ignored by Git
+# dependencies
+pip install -r requirements.txt
 
-├── LICENSE # Usage License
+# run (from the src folder)
+cd src
+python main.py
+```
 
-└── README.md # Project Documentation
+---
 
- 
+## 👤 Author
+
+**Felipe Diniz** · [GitHub](https://github.com/lipefp) · [LinkedIn](https://www.linkedin.com/in/felipe-diniz-39237b288)
